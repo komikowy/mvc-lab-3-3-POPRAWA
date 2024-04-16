@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add new car</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <header class="header">
+        <nav class="navigation_list">
+            <ul>
+                <li><a class="navigation_link" href="/">Home</a></li>
+                <li><a class="navigation_link" href="/car/add">Add new car</a></li>
+                <li><a class="navigation_link" href="/car">Last added car</a></li>
+                <li><a class="navigation_link" href="/car/list">Cars</a></li> 
+            </ul> 
+        </nav> 
+    </header>
+
+    <main> 
+        <form action="/car/add" method="POST">
+            Make
+            <label class ="label"> 
+                Model
+                <input type ="text"name = "make" placeholder ="Make"/> 
+            </label>
+
+            Model
+            <label class ="label"> 
+                Model
+                <input type ="text"name = "model" placeholder ="Model"/>  
+            </label>
+
+            Year
+            <label class = "label">
+                <input type = "number"name = "year" placeholder = "Year"/>
+            </label>
+
+            Color
+            <label class = "label">
+                <input type = "text"name =  "color"  placeholder = "Color" />
+            </label>
+
+            <button>Add new car</button>
+        </form >
+    </main >
+
+</body>
+</html>
